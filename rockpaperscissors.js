@@ -2,7 +2,9 @@ let one = document.querySelector("#one"); //rock
 let two = document.querySelector("#two") //paper
 let three = document.querySelector("#three") //scissor
 
-let name = prompt("Enter your name : ")
+let name = prompt("Enter your name : ");
+let userName = document.querySelector("#user-name-box");
+userName.innerText = `${name} Score:`
 
 one.addEventListener("click", () => {
     userValue = 1;
@@ -25,7 +27,7 @@ const answerFn = (userValue) => {
 
     let userScore = document.querySelector("#user-score-one");
     let computerScore = document.querySelector("#computer-score-two");
-    let userName = document.querySelector("#user-name-box");
+    // let userName = document.querySelector("#user-name-box");
 
     let reason = document.querySelector("#reason");
     let computerArray = [1,2,3];
@@ -40,7 +42,6 @@ const answerFn = (userValue) => {
     // condition if computer wins
     if(userValue===1 && computerAnswer ===2 || userValue===3 && computerAnswer===1 || userValue===2 && computerAnswer===3){
         console.log("Computer wins");
-        userName.innerText = `${name} Score:`
         computerScore.innerText++; // update computer score
 
         reason.innerText = `Computer wins because ${computerArrayMeaning[computerAnswer-1]} beats ${computerArrayMeaning[userValue-1]}`;
@@ -49,7 +50,6 @@ const answerFn = (userValue) => {
     // user wins
     else{
         console.log("User wins");
-        userName.innerText = `${name} Score:`
         userScore.innerText++; // update user score
         
         reason.innerText = `${name} wins because ${computerArrayMeaning[userValue-1]} beats ${computerArrayMeaning[computerAnswer-1]}`;
