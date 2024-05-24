@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#one{
+    background-color: pink;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#two{
+    background-color: purple;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#three{
+    background-color: blue;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-circle{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 20px;
+}
+
+#reason{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 2.5rm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#score-box{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    margin-top: 20px;
+    width: 25%;
+    padding: 20px 0px 20px 10px;
+}
+
+#header{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#score-box-one-two{
+    display: flex;
+}
