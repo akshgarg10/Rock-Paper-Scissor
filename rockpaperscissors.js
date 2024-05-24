@@ -40,6 +40,7 @@ const answerFn = (userValue) => {
     // condition if computer wins
     if(userValue===1 && computerAnswer ===2 || userValue===3 && computerAnswer===1 || userValue===2 && computerAnswer===3){
         console.log("Computer wins");
+        userName.innerText = `${name} Score:`
         computerScore.innerText++; // update computer score
 
         reason.innerText = `Computer wins because ${computerArrayMeaning[computerAnswer-1]} beats ${computerArrayMeaning[userValue-1]}`;
@@ -48,7 +49,7 @@ const answerFn = (userValue) => {
     // user wins
     else{
         console.log("User wins");
-        userName.innerText = `${name} Score: `
+        userName.innerText = `${name} Score:`
         userScore.innerText++; // update user score
         
         reason.innerText = `${name} wins because ${computerArrayMeaning[userValue-1]} beats ${computerArrayMeaning[computerAnswer-1]}`;
